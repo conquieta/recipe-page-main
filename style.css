@@ -91,7 +91,7 @@ video {
 /* Base styles */
 body {
   font-family: "Outfit", sans-serif;
-  background-color: hsl(330, 100%, 98%);
+  background-color: hsl(29, 53%, 90%);
   color: hsl(30, 10%, 34%);
   line-height: 1.5;
   padding: 1rem;
@@ -108,24 +108,22 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 2rem auto;
+  padding: 1rem;
 }
 
 .recipe-image {
   width: 100%;
   height: 300px;
-  background-color: #f0f0f0;
 }
 
 .recipe-image img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  border: 0 solid transparent;
+  border-radius: 1rem;
 }
 
-.recipe-content {
-  padding: 2rem;
-}
+
 
 /* Typography */
 h1 {
@@ -160,7 +158,8 @@ h2 {
 }
 
 .preparation-time ul {
-  list-style: none;
+  list-style: disc;
+  padding: 1rem;
 }
 
 .preparation-time li {
@@ -239,10 +238,6 @@ h2 {
 @media (min-width: 768px) {
   .recipe-image {
     height: 400px;
-  }
-
-  .recipe-content {
-    padding: 2.5rem;
   }
 }
 
